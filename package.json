@@ -9,20 +9,20 @@
     "es"
   ],
   "scripts": {
-    "dev": "vant-cli dev",
-    "test": "vant-cli test",
-    "lint": "vant-cli lint",
-    "build": "vant-cli build",
-    "release": "vant-cli release",
+    "dev": "focus-mini-cli dev",
+    "test": "focus-mini-cli test",
+    "lint": "focus-mini-cli lint",
+    "build": "focus-mini-cli build",
+    "release": "focus-mini-cli release",
     "test:coverage": "open test/coverage/index.html",
-    "build-site": "vant-cli build-site && gh-pages -d site-dist"
+    "build-site": "focus-mini-cli build-site && gh-pages -d site-dist"
   },
   "author": "",
   "license": "MIT",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "vant-cli commit-lint"
+      "commit-msg": "focus-mini-cli commit-lint"
     }
   },
   "lint-staged": {
@@ -34,7 +34,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
-    "@babel/plugin-transform-object-assign": "^7.16.7",
+    "@vant/cli": "2.6.1",
     "babel-plugin-import": "^1.13.0",
     "miniprogram-api-typings": "^3.1.6",
     "miniprogram-ci": "^1.6.1",
